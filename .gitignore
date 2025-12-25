@@ -237,6 +237,15 @@ results/
 output/
 outputs/
 
+# Build directories
+build/
+dist/
+build_windows/
+dist_windows/
+
+# Note: Keep .spec files for packaging
+# *.spec
+
 # Log files
 *.log
 logs/
