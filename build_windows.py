@@ -14,7 +14,7 @@ import json
 # 配置
 PROJECT_NAME = "HAADF_STEM_Deconvolution"
 VERSION = "1.0.0"
-OUTPUT_DIR = "dist_windows"
+OUTPUT_DIR = "dist"
 BUILD_DIR = "build_windows"
 
 def print_step(message):
@@ -40,7 +40,18 @@ def check_dependencies():
 
     for package in required_packages:
         try:
-            __import__(package.lower())
+            if package == 'PyInstaller':
+                import PyInstaller
+            elif package == 'PyQt6':
+                import PyQt6
+            elif package == 'numpy':
+                import numpy
+            elif package == 'scipy':
+                import scipy
+            elif package == 'matplotlib':
+                import matplotlib
+            elif package == 'mrcfile':
+                import mrcfile
             print(f"✓ {package}")
         except ImportError:
             print(f"✗ {package} - 未安装")
