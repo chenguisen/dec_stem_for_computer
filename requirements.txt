@@ -1,0 +1,22 @@
+# Requirements for HAADF-STEM Deconvolution GUI
+# 解卷积GUI所需依赖包
+
+# GUI Framework
+PyQt6>=6.0.0
+
+# Scientific Computing
+numpy>=1.20.0
+scipy>=1.7.0
+matplotlib>=3.5.0
+
+# File I/O
+mrcfile>=1.4.0
+
+# Optional: For better performance
+numba>=0.56.0
+
+# Optional: For advanced image processing
+scikit-image>=0.19.0
+
+# Optional: For progress bars in terminal
+tqdm>=4.62.0
