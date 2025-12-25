@@ -217,6 +217,9 @@ $RECYCLE.BIN/
 *.jpeg
 *.bmp
 
+# Exception: Test data files are allowed in testdata/ directory
+!testdata/*.mrc
+
 # Large binary files
 *.raw
 *.bin
